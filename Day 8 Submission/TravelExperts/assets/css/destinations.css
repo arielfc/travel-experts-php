@@ -1,0 +1,12 @@
+#image {
+	width: 100%;
+}
+
+article{
+	display: flex;
+	width: 1080px;
+}
+
+article div {
+	width: 45%;
+}
