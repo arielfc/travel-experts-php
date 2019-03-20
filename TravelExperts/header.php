@@ -9,6 +9,7 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="register.php">Register</a></li>
             <li><a href="about.php">About</a></li>
+            <li><a href="login_abed.php">Abed Login</a></li>
         </ul>
     </nav>
 </header>
