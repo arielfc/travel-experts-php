@@ -33,7 +33,7 @@
     
         ?>
         <!-- <h1 style="font-size:60px">Go Anywhere</h1> -->
-        <button class="btn btn-dark"><a href="destinations.html";>Destinations</a></button>
+        <button class="btn btn-dark"><a href="destinations.php";>Destinations</a></button>
     </div>
     <footer class="fixed-bottom">
     <?php

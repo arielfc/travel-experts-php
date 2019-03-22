@@ -15,19 +15,9 @@
 
 </head>
 <body class="center">
-    <header>
-        <img src="assets\images\logowhite.png">
-        <nav id="container" class="center">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-		<li><a href="links.php">Links</a></li>
-                <li><a href="destinations.php">Destinations</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="register.php">Register</a></li>
-                <li><a href="about.php">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+        include 'header.php';
+    ?>
     <h1>UNDER CONSTRUCTION</h1>
     <!-- action value for form -- action="http://localhost/bouncer.php" -->
     <form onsubmit="checker(postalcode.value)" class="needs-validation">
@@ -68,13 +58,6 @@
             </div>
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>
-        <!-- <p>
-            Name: <span id="outputName"></span><br>
-            Address: <span id="outputAddress"></span><br> 
-            City: <span id="outputCity"></span><br>
-            Province: <span id="outputProvince"></span><br>
-            Postal Code: <span id="outputPostalcode"></span><br> 
-        </p> -->
     </form>
 
     <script>
@@ -91,43 +74,6 @@
                 alert("invalid postal code");
             }
         }
-    
-        // var details = document.getElementById("details");
-        // details.onclick = function(){
-        //     var name = document.getElementById("name").value;
-        //     var address = document.getElementById("address").value;
-        //     var city = document.getElementById("city").value;
-        //     var province = document.getElementById("province").value;
-        //     var postalcode = document.getElementById("postalcode").value;
-        //     document.getElementById("outputName").innerText = name;
-        //     document.getElementById("outputAddress").innerText = address;
-        //     document.getElementById("outputCity").innerText = city;
-        //     document.getElementById("outputProvince").innerText = province;
-        //     document.getElementById("outputPostalcode").innerText = postalcode;
-        // }
-        // var submit = document.getElementById("submit");
-        // submit.onclick = function(){
-        //     confirm('Are you sure?');
-        // }
-
-            //Example starter JavaScript for disabling form submissions if there are invalid fields
-        // (function() {
-        // 'use strict';
-        // window.addEventListener('load', function() {
-        //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        //     var forms = document.getElementsByClassName('needs-validation');
-        //     // Loop over them and prevent submission
-        //     var validation = Array.prototype.filter.call(forms, function(form) {
-        //     form.addEventListener('submit', function(event) {
-        //         if (form.checkValidity() === false) {
-        //         event.preventDefault();
-        //         event.stopPropagation();
-        //         }
-        //         form.classList.add('was-validated');
-        //         }, false);
-        //     });
-        // }, false);
-        // })();
     </script>  
 </body>
 </html>

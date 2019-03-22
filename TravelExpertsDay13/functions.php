@@ -18,10 +18,8 @@
         </thead>
         <tbody>
         <?php
-        $connect = mysqli_connect('localhost', 'ariel', 'ariel123', 'travelexperts');
-            if (!$connect) {
-                die(mysql_error());
-            }
+        include 'connect.php';
+        
         $query = "SELECT * FROM agents";
             $result=mysqli_query($connect, $query);
             while ($row = mysqli_fetch_array($result)){     
